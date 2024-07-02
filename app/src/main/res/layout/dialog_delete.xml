@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="130dp"
+        android:layout_height="10dp"
+        android:background="#74B4AFAF"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Are You Sure want to delete\n This Task?">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/bold"
+        android:background="@drawable/yes_btn"
+        android:padding="10dp"
+        android:text="Yes">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/bold"
+        android:padding="10dp"
+        android:background="@drawable/yes_btn"
+        android:backgroundTint="#74B4AFAF"
+        android:text="No">
+    </TextView>
+
+</LinearLayout>

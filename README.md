@@ -1,4 +1,4 @@
-# 🧑‍🎓College Buddy
+# 🧑‍🎓ToDo App
 
 
 

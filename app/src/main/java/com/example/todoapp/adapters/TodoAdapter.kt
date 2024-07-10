@@ -5,14 +5,19 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todoapp.Fragments.HomeFragment
 import com.example.todoapp.Fragments.HomeFragmentDirections
 import com.example.todoapp.R
 import com.example.todoapp.databinding.ItemTodoBinding
 import com.example.todoapp.model.Todo
 
-class TodoAdapter(val requireContext: Context,val todolist: List<Todo>)
+class TodoAdapter(val requireContext: Context, var todolist: List<Todo>)
     : RecyclerView.Adapter<TodoAdapter.todoViewHolder>() {
+
+        fun filtering(newFilteredList: ArrayList<Todo>) {
+            todolist = newFilteredList
+            notifyDataSetChanged()
+        }
+
     class todoViewHolder(val binding: ItemTodoBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
@@ -37,10 +42,10 @@ class TodoAdapter(val requireContext: Context,val todolist: List<Todo>)
                 holder.binding.viewPriority.setBackgroundResource(R.drawable.green_dot)
             }
             "2"->{
-                holder.binding.viewPriority.setBackgroundResource(R.drawable.yellow_dot)
+                holder.binding.viewPriority.setBackgroundResource(R.drawable.red_dot)
             }
             "3"->{
-                holder.binding.viewPriority.setBackgroundResource(R.drawable.red_dot)
+                holder.binding.viewPriority.setBackgroundResource(R.drawable.yellow_dot)
             }
         }
 
@@ -48,6 +53,7 @@ class TodoAdapter(val requireContext: Context,val todolist: List<Todo>)
             val action = HomeFragmentDirections.actionHomeFragmentToEditToDoFragment(data)
             Navigation.findNavController(it).navigate(action)
         }
+
 
     }
 

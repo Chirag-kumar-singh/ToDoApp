@@ -1,15 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
     <style name="Base.Theme.ToDoApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
+        <!-- Customize your light theme here if needed. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.ToDoApp" parent="Base.Theme.ToDoApp" />
-
-    <style name="ProgressBar" >
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.ToDoApp" parent="Base.Theme.ToDoApp">
+        <!-- Your primary color for action bar -->
+        <item name="colorPrimary">#0D1416</item>
+        <!-- Transparent navigation bar -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Customize status bar color -->
+        <item name="android:statusBarColor">@color/foreground_color</item>
+        <!-- Ensure light or dark status bar text based on theme -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
+    <!-- Define your PopupOverlay style -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

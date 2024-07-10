@@ -22,6 +22,12 @@ class TodoViewModel(application: Application): AndroidViewModel(application) {
 
     fun getTodo(): LiveData<List<Todo>> = repository.getAllTodo()
 
+    fun getHighTodo():LiveData<List<Todo>> = repository.getHighTodo()
+
+    fun getMediumTodo():LiveData<List<Todo>> = repository.getMediumTodo()
+
+    fun getLowTodo():LiveData<List<Todo>> = repository.getLowTodo()
+
     fun deleteTodo(id: Int){
         repository.deleteTodo(id)
     }

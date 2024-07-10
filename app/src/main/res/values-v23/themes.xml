@@ -2,9 +2,15 @@
 
     <style name="Theme.ToDoApp" parent="Base.Theme.ToDoApp">
         <!-- Transparent system bars for edge-to-edge. -->
-        <item name="colorPrimary">#0D1416</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@color/background_color</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
+    <style name="CustomToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:colorControlNormal">@android:color/white</item>
     </style>
 </resources>

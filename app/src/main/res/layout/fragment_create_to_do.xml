@@ -23,6 +23,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/regular"
             android:textColorHint="#E1EBE0CA"
+            android:textColor="#E1EBE0CA"
             android:maxLines="1">
         </EditText>
 
@@ -36,6 +37,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/regular"
             android:textColorHint="#E1EBE0CA"
+            android:textColor="#E1EBE0CA"
             android:maxLines="1">
         </EditText>
 
@@ -79,7 +81,8 @@
             android:layout_marginTop="10dp"
             android:gravity="start"
             android:fontFamily="@font/regular"
-            android:textColorHint="#E1EBE0CA">
+            android:textColorHint="#E1EBE0CA"
+            android:textColor="#E1EBE0CA">
         </EditText>
 
     </LinearLayout>

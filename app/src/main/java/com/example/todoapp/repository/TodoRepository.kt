@@ -10,6 +10,12 @@ class TodoRepository(val dao: TodoDao) {
         return dao.getTodo()
     }
 
+    fun getHighTodo():LiveData<List<Todo>> = dao.getHighTodo()
+
+    fun getMediumTodo():LiveData<List<Todo>> = dao.getMediumTodo()
+
+    fun getLowTodo():LiveData<List<Todo>> = dao.getLowTodo()
+
     fun insertTodo(todo: Todo){
         dao.InsertTodo(todo)
     }

@@ -93,6 +93,7 @@
         android:layout_gravity="bottom|right"
         android:layout_margin="26dp"
         android:backgroundTint="@color/foreground_color"
+        android:src="@drawable/done"
         />
 
 </FrameLayout>

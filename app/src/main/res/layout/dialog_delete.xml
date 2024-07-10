@@ -23,6 +23,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/dialog_yes"
         android:gravity="center"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
@@ -36,10 +37,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/dialog_no"
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/bold"
         android:padding="10dp"
         android:background="@drawable/yes_btn"

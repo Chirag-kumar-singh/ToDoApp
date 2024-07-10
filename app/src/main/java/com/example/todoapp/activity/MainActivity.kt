@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         // You can add any other initialization code here
         setSupportActionBar(binding.toolbar)
 
+        //binding.toolbar.title = "Home"
+
         navController=findNavController(R.id.fragmentContainerView)
         setupActionBarWithNavController(navController)
     }

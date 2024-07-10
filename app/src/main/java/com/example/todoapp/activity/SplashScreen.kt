@@ -1,5 +1,4 @@
 package com.example.todoapp.activity
-
 import android.content.Intent
 import android.os.Bundle
 import android.os.Looper
@@ -20,8 +19,10 @@ class SplashScreen : AppCompatActivity() {
             insets
         }
 
+        // Delayed start of MainActivity
         android.os.Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
-        }, 2000)
+            finish() // Finish SplashScreen activity after starting MainActivity
+        }, 2000) // 2-second delay
     }
 }
